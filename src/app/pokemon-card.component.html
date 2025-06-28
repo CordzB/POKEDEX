@@ -1,0 +1,9 @@
+<div class="card">
+  <img [src]="pokemon.image" alt="{{ pokemon.name }}">
+  <h3>{{ pokemon.name | titlecase }}</h3>
+  <ul>
+    <li *ngFor="let stat of pokemon.stats">
+      <strong>{{ stat.name | uppercase }}:</strong> {{ stat.base }}
+    </li>
+  </ul>
+</div>
